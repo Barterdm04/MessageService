@@ -19,8 +19,11 @@ public class Startup {
         //MessageReader reader = new DefaultMessageReader();
         //MessageWriter writer = new ConsoleMessageWriter();
         
-        MessageReader reader = new KeyboardMessageReader();
-        MessageWriter writer = new PromptMessageWriter();
+        //MessageReader reader = new KeyboardMessageReader();
+        //MessageWriter writer = new PromptMessageWriter();
+        
+        MessageReader reader = new RandomMessageReader();
+        MessageWriter writer = new ConsoleMessageWriter();
         
         MessageService messageService = new MessageService(reader, writer);
         messageService.assignMessage();
