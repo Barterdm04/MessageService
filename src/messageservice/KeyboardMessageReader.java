@@ -11,11 +11,13 @@ import java.util.Scanner;
  *
  * @author DB7
  */
-public class KeyboardMessageReader {
+public class KeyboardMessageReader implements MessageReader {
+    @Override
     public String readMessage() {
             System.out.println("Please enter your message, then press return:");
 
             Scanner input = new Scanner(System.in);
+            
             return input.nextLine();
 	}
 }

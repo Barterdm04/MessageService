@@ -16,11 +16,15 @@ public class Startup {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        MessageReader reader = new DefaultMessage();
+        //MessageReader reader = new DefaultMessageReader();
+        //MessageWriter writer = new ConsoleMessageWriter();
+        
+        MessageReader reader = new KeyboardMessageReader();
         MessageWriter writer = new PromptMessageWriter();
         
         MessageService messageService = new MessageService(reader, writer);
         messageService.assignMessage();
+        
         System.out.println("Program ended. Message of reader input copied successfully to writer output.");
 
     }

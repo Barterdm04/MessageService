@@ -9,8 +9,12 @@ package messageservice;
  *
  * @author DB7
  */
-public class DefaultMessage implements MessageReader{
+public class RandomMessageReader implements MessageReader{
+    
     public String readMessage(){
-        return "This is the default message for the MessageService system.";
+        return "inapplicable";
+    }
+    public String randomMessageGenerator(){
+        return null;
     }
 }

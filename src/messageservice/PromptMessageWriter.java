@@ -5,13 +5,15 @@
  */
 package messageservice;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author DB7
  */
 public class PromptMessageWriter implements MessageWriter{
     @Override
-    public void writeMessage(String line){
-        System.out.println(line);
+    public void writeMessage( String line ) {
+        JOptionPane.showMessageDialog(null, line );
     }
 }
