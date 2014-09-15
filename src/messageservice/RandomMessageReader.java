@@ -12,10 +12,11 @@ import java.util.Random;
  * @author DB7
  */
 public class RandomMessageReader implements MessageReader{
-    private String[] messageArray = {"This is message one!","This is message two!", "This is message three!" , "This is message four!"};
-    Random RandomGenerator = new Random();
+    private final String[] messageArray = {"This is message one!","This is message two!", "This is message three!" , "This is message four!", "This is message five!", "This is message six!"};
     
+    @Override
     public String readMessage(){      
+        Random RandomGenerator = new Random();
         return messageArray[RandomGenerator.nextInt(messageArray.length)];
     }
     
