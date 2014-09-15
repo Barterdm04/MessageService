@@ -16,7 +16,7 @@ public class RandomMessageReader implements MessageReader{
     Random RandomGenerator = new Random();
     
     public String readMessage(){      
-        return messageArray[RandomGenerator.nextInt(4)];
+        return messageArray[RandomGenerator.nextInt(messageArray.length)];
     }
     
 }
