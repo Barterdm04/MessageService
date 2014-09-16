@@ -14,13 +14,13 @@ public class MessageService {
 	private MessageReader reader;
 	private MessageWriter writer;
 	
-	public MessageService(MessageReader reader, MessageWriter writer ) {
+	public MessageService( MessageReader reader, MessageWriter writer ) {
 		this.reader = reader;
 		this.writer = writer;
 	}
 	
 	public void assignMessage() {
-            String line = reader.readMessage();
-            writer.writeMessage( line );
+            String message = reader.readMessage();
+            writer.writeMessage( message );
 	}
 }

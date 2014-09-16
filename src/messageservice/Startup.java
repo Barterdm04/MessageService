@@ -28,7 +28,7 @@ public class Startup {
         MessageService messageService = new MessageService(reader, writer);
         messageService.assignMessage();
         
-        System.out.println("Program ended. Message of reader input copied successfully to writer output.");
+        System.out.println("Program ended successfully.");
 
     }
     
