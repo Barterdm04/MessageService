@@ -11,7 +11,7 @@ package messageservice;
  */
 public class ConsoleMessageWriter implements MessageWriter{
     @Override
-    public void writeMessage(String line){
-        System.out.println(line);
+    public void writeMessage(MessageReader message){
+        System.out.println(message.readMessage());
     }
 }

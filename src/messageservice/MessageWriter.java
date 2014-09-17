@@ -10,5 +10,5 @@ package messageservice;
  * @author DB7
  */
 public interface MessageWriter {
-    public abstract void writeMessage(String message);
+    public abstract void writeMessage( MessageReader message );
 }
