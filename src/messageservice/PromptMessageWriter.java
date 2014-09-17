@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class PromptMessageWriter implements MessageWriter{
     @Override
-    public void writeMessage( MessageReader message ) {
-        JOptionPane.showMessageDialog(null, message.readMessage() );
+    public void writeMessage( String message ) {
+        JOptionPane.showMessageDialog(null, message );
     }
 }

@@ -21,6 +21,7 @@ public class MessageService {
 	}
 	
 	public void assignMessage() {
-            writer.writeMessage( reader );
+            String message = reader.readMessage();
+            writer.writeMessage( message );
 	}
 }
