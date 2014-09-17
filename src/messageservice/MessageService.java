@@ -20,7 +20,6 @@ public class MessageService {
 	}
 	
 	public void assignMessage() {
-            //String message = reader.readMessage();
             writer.writeMessage( this.reader );
 	}
 }
