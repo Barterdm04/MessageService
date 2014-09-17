@@ -15,11 +15,12 @@ public class MessageService {
 	private MessageWriter writer;
 	
 	public MessageService( MessageReader reader, MessageWriter writer ) {
-		this.reader = reader;
-		this.writer = writer;
+            this.reader = reader;
+            this.writer = writer;
+//            assignMessage();
 	}
 	
 	public void assignMessage() {
-            writer.writeMessage( this.reader );
+            writer.writeMessage( reader );
 	}
 }

@@ -16,11 +16,11 @@ public class Startup {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //MessageReader reader = new DefaultMessageReader();
-        //MessageWriter writer = new ConsoleMessageWriter();
+//        MessageReader reader = new DefaultMessageReader();
+//        MessageWriter writer = new ConsoleMessageWriter();
         
-        //MessageReader reader = new KeyboardMessageReader();
-        //MessageWriter writer = new PromptMessageWriter();
+//        MessageReader reader = new KeyboardMessageReader();
+//        MessageWriter writer = new PromptMessageWriter();
         
         MessageReader reader = new RandomMessageReader();
         MessageWriter writer = new ConsoleMessageWriter();
