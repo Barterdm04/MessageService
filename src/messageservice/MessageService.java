@@ -17,7 +17,7 @@ public class MessageService {
 	public MessageService( MessageReader reader, MessageWriter writer ) {
             this.reader = reader;
             this.writer = writer;
-//            assignMessage();
+
 	}
 	
 	public void assignMessage() {
